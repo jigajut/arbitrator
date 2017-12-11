@@ -52,13 +52,13 @@ while 1:
 		exmobtcus = exmo.call('BTC_USD', 'BTC_USD')
 		exmobchus = exmo.call('BCH_USD', 'BCH_USD')
 		exmoltcus = exmo.call('LTC_USD', 'LTC_USD')
-		cexdollar = requests.get("https://cex.io/api/order_book/BTC/USD/?depth=10")
+		cexdollar = requests.get("https://cex.io/api/order_book/BTC/USD/?depth=20")
 		cexresult = cexdollar.json()
-		cexeuro = requests.get("https://cex.io/api/order_book/BTC/EUR/?depth=10")
+		cexeuro = requests.get("https://cex.io/api/order_book/BTC/EUR/?depth=20")
 		cexeuroresult = cexeuro.json()
-		cexethdollar = requests.get("https://cex.io/api/order_book/ETH/USD/?depth=10")
+		cexethdollar = requests.get("https://cex.io/api/order_book/ETH/USD/?depth=20")
 		cexethresult = cexethdollar.json()
-		cexetheuro = requests.get("https://cex.io/api/order_book/ETH/EUR/?depth=10")
+		cexetheuro = requests.get("https://cex.io/api/order_book/ETH/EUR/?depth=20")
 		cexetheuroresult = cexetheuro.json()
 
 
